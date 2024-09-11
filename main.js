@@ -18,7 +18,7 @@ subBtn.onclick = function convert() {
     }
     else if (toFahrenheitBtn.checked) {
         temp = (Number(textBox.value))
-        temp = temp - 32 * 5 / 9
+        temp = (temp - 32) * 5 / 9
         hint.textContent = temp.toFixed(1) + ' градусов'
 
         // we should prevent bugs when user didn't tap anything on the page, so I added the check in 'else' 
